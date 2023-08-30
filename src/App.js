@@ -1,4 +1,4 @@
-import { Button } from "@vimala-siravi/my-library";
+import { Button, convertToLowerCase } from "@vimala-siravi/my-library";
 import { useState } from "react";
 
 function App() {
@@ -10,7 +10,9 @@ function App() {
 
   return (
     <div className="container mx-auto px-4 py-4">
-      <h1 className="ml-5 text-center font-bold">Button component</h1>
+      <h1 className="ml-5 text-center font-bold">
+        {convertToLowerCase("BUTTON COMPONENT")}
+      </h1>
       <Button variant="outlined" onClick={() => toggleText()}>
         Hello World
       </Button>
